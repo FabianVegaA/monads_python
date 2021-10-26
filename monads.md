@@ -116,10 +116,10 @@ x = Just("1")
 
 y = (
     x
-    >> int # Transforma a int
-    >> (lambda x: -x) # Obtiene el negativo
-    >> (lambda x: x + 3) # Suma 3
-    >> (lambda x: x ** 2) # Eleva a la potencia de 2
+    >> int                        # Transforma a int
+    >> (lambda x: -x)             # Obtiene el negativo
+    >> (lambda x: x + 3)          # Suma 3
+    >> (lambda x: x ** 2)         # Eleva a la potencia de 2
     >> (lambda x: list(range(x))) # Crea una lista desde el 0 a x
 )
 ```
@@ -137,9 +137,9 @@ x = Just("1")
 
 y = (
     x
-    >> int # Transforma a int
-    >> (lambda x: -x) # Obtiene el negativo
-    >> (lambda x: x / 0) # Divide entre 0
+    >> int                                # Transforma a int
+    >> (lambda x: -x)                     # Obtiene el negativo
+    >> (lambda x: x / 0)                  # Divide entre 0
     >> (lambda x: x + "This is an Error") # Se suma con un str
 )
 ```
